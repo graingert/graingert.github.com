@@ -1,0 +1,25 @@
+<div id=":we" class="ii gt">
+
+
+
+
+
+<div bgcolor="#ffffff">
+<h1>Work Experience</h1>
+<h2>IBM</h2>
+I've worked for the IBM Storage Subsystems Group in <a title="Hursley" href="http://www-05.ibm.com/uk/locations/hursley_details.html" id="djrx">Hursley</a> for a few weeks for the last three summers, each time I've been involved in a different task: <br>
+<h3>Sense Expert</h3>
+The first year I was asked to add some pages to the SVC's (<a title="SAN Volume controller" href="http://www-03.ibm.com/systems/storage/software/virtualization/svc/index.html" id="rp60">SAN Volume controller</a>) web GUI. The additional function was to provide human readable decoded data for 128 byte sense reports, which were otherwise translated back at support. This required the implementation of a suitable infrastructure that would allow new sense reports to be decoded without requiring fresh code updates.  The code that I developed was about 200 lines of Perl, along with some unit test procedures. The function is shipped with the product today and is thought to have saved some unnecessary support calls, and is frequently used during error inject and other tests in Hursley. <br>
+<h3>SCSI Command Injector<br>
+</h3>
+The second year I developed a <a title="SCSI" href="http://en.wikipedia.org/wiki/SCSI" id="qarh">SCSI</a>(Small Computer System Interface) command injector, this was around 500 lines of <a title="C" href="http://en.wikipedia.org/wiki/C_programming_language" id="w5-v">C</a>, and was based on a similar test tool. This was a particularly difficult project, but has again proved useful during test. This project is not intended to be used by IBM customers, rather is intended to be used to help diagnose system issues with subsystems connected to the SVC. The SCSI protocol includes commands to request <a title="inquiry" href="http://en.wikipedia.org/wiki/SCSI_Inquiry_Command" id="c1j7">inquiry</a> data, and commands to set various special <a title="modes" href="http://en.wikipedia.org/wiki/SCSI_Mode_Sense_Command" id="xuh0">modes</a>, <a title="formatting" href="http://en.wikipedia.org/wiki/SCSI_Format_Unit_Command" id="yc18">formatting</a>and reallocation commands as well as the usual <a title="read" href="http://en.wikipedia.org/wiki/SCSI_Read_Commands" id="zs_o">read</a> and <a title="write" href="http://en.wikipedia.org/wiki/SCSI_Write_Commands" id="v18l">write</a>commands. The difficulties centred on the debugging of the C code that I produced, since C is really quite a low level language and is very easy to produce compilable code that crashes the whole machine. I spent some considerable time working with a custom debugger to track down various bugs.  <br>
+<h3>SCSI Command Injector GUI</h3>
+This final year, I was approached to add a GUI to the SCSI command injector, since testers had found that assembling SCSI commands in hex and decoding the status and sense, is time consuming and error prone. This tool must not be available to customers, since they could very easily corrupt data by using as SCSI format command, so the first part of the project was to include a secure method of enabling the tool in the SVC GUI, such that it would only be available to testers. Whilst doing this I realised that I could add a CLI inside the GUI, which is useful for cases in test where the CLI is not working. The main part of my time was spent adding a set of perl pages each of which implemented a particular SCSI command. I created around 10 or 15 pages, including a menu page to allow selection of a particular command. The pages included various pull-down options, some of which had to be populated dynamically from data received from library functions within the SVC CLI.</div>
+</div>
+<br>
+
+<!--
+<object type="text/html" data="http://docs.google.com/View?docID=0AUkyuqffaYIQZGY0bWQ3OGpfMjQ3dGtmN2hiZGs&revision=_latest&hgd=1">
+<p>objects not suported</p>
+</object>
+-->

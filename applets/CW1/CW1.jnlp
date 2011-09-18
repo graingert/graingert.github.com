@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jnlp spec="1.0+" codebase="http://users.ecs.soton.ac.uk/tag1g09/applets/CW1/" href="CW1.jnlp">
+
+  <information>
+     <title>DemoWindow</title>
+     <vendor>Thomas Grainger</vendor>
+     <homepage href="http://users.ecs.soton.ac.uk/tag1g09/" />
+     <description>This is the CW1 for COMP1004</description>
+     <offline-allowed />
+   </information>
+
+  <resources>
+     <j2se version="1.6+"/>
+     <jar href="CW1.jar" main="true" />
+   </resources>
+
+  <application-desc />
+  
+  <security>
+    <all-permissions/>
+  </security>
+
+</jnlp>

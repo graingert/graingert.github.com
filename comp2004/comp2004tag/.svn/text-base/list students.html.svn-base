@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>list students</title>
+
+</head><body>
+<h1>List Students</h1>
+List students by their status<br>
+<br>
+<form target="_parent" method="post" action="listStudents.php" name="listStudents">Enter
+student status
+<select name="status"><option selected="selected">current</option><option>suspended</option><option>left</option></select>
+<br>
+<button name="submit">Submit</button><button type="reset">Reset</button></form>
+</body></html>

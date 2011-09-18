@@ -1,0 +1,77 @@
+<?php
+
+class DataBaseAccess{
+	private static $dbh;
+	public static function getDBH(){
+		if (is_null(self::$dbh)){
+			try {
+				self::$dbh = new PDO('mysql:dbname=db_tag1g09;host=localhost','tag1g09','oX05CS3WNrKzOGgDZx7CFhVv5HRzSP');
+			} catch (PDOException $e){
+				echo $e->getMessage();
+			}
+		}
+		return self::$dbh;
+	}
+}
+
+class Student{
+	public $id;
+	public $name;
+	public $dateOfBirth;
+	public $email;
+	public $gender;
+	public $status;
+	
+	public static function getByStatus($status){
+		$stmt = DataBaseAccess::getDBH()->prepare('SELECT * FROM ds_students WHERE status = :status');
+		$stmt->execute(array(':status' => $status));
+		return $stmt->fetchALL(PDO::FETCH_CLASS,'Student');
+	}
+	
+	public static function getByEmail($email){
+		$stmt = DataBaseAccess::getDBH()->prepare('SELECT * FROM ds_students WHERE email = :email');
+		$stmt->execute(array(':email' => $email));
+		return ($stmt->fetch(PDO::FETCH_CLASS,'Student'));
+	}
+	
+	public function __toString(){
+		return "$this->name $this->email $this->gender $this->status";
+	}
+	
+	public function getExams(){
+		$exams= array();
+		$stmt = DataBaseAccess::getDBH()->prepare('SELECT exam FROM ds_examstudent WHERE student = :student');
+		$stmt->execute(array(':student' => $this->id));
+		$result = $stmt->fetch(PDO::FETCH_ASSOC);
+		foreach($result as $key=>$val){
+			$stmt = DataBaseAccess::getDBH()->prepare('SELECT * FROM ds_exams WHERE exam = :exam');
+			$stmt->execute(array(':exam' => $val));
+			$exams = array_merge($exams,$stmt->fetchALL(PDO::FETCH_CLASS, 'Exam'));
+		}
+	}
+}
+
+class Exam{
+	public $id;
+	public $date;
+	public $students;
+	public $kind;
+	public $mark;
+	
+	public function getStudents(){
+		$this->students= array();
+		$stmt = DataBaseAccess::getDBH()->prepare('SELECT student FROM ds_examstudent WHERE exam = :exam');
+		$stmt->execute(array(':exam' => $this->id));
+		$result = $stmt->fetch(PDO::FETCH_ASSOC);
+		foreach($result as $key=>$val){
+			$stmt = DataBaseAccess::getDBH()->prepare('SELECT * FROM ds_students WHERE student = :student');
+			$stmt->execute(array(':student' => $val));
+			$exams = array_merge($exams,$stmt->fetchALL(PDO::FETCH_CLASS, 'Student'));
+		}
+	}
+	
+	public function __toString(){
+		return "$this->date $this->kind $this->gender $this->status";
+	}
+	
+}
