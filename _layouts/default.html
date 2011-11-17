@@ -47,14 +47,14 @@ href="/foaf.rdf" />
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>{{page.title}}</h1>
-        {{content}}
+        {{page.excerpt}}
         <p><a class="btn primary large" href="#about">Learn more &raquo;</a></p>
 
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
-		{% for post in site.posts limit: 3 %}
+		{% for post in site.pages limit: 3 %}
         <div class="span5">
 			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
 			{{ post.excerpt }}
