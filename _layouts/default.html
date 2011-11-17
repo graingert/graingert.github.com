@@ -56,9 +56,11 @@ href="/foaf.rdf" />
 		{% for post in site.pages limit: 3 %}
         <div class="span5">
 			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+			{{ if post.thumb }}
 			<figure>
 				<img class="thumbnail" src="{{post.thumb}}" />
 			</figure>
+			{{endif}}
 			{{ post.excerpt }}
 			<p><a class="btn" href="{{ post.url }}">View details &raquo;</a></p>
 		</div>
