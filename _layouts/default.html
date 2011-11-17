@@ -55,9 +55,9 @@ href="/foaf.rdf" />
       <div class="row">
 		{% for post in site.pages limit: 3 %}
         <div class="span5">
-			<a href="{{ page.url }}"><h2>{{ post.title }}</h2></a>
+			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
 			{{ post.excerpt }}
-			<p><a class="btn" href="{{ page.url }}">View details &raquo;</a></p>
+			<p><a class="btn" href="{{ post.url }}">View details &raquo;</a></p>
 		</div>
 		{% endfor %}
       </div>
