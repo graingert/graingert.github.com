@@ -1,161 +1,94 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
-<head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
 	<title>{{page.title}}</title>
-	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta charset="utf-8" />
 	<meta name="description" content="Thomas Grainger" />
 	<meta name="keywords" content="Thomas, Grainger, Thomas 
-Grainger, tag1g09, ECS undergraduate, student robotics" />
+Grainger, tag1g09, ECS undergraduate" />
 	<link rel="meta" type="application/rdf+xml" title="FOAF" 
 href="/foaf.rdf" />	
 <meta name="robots" content="index, follow"/>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-</head>
-<body>
-<heading>
-	<h1>
-		<a 
-href="http://www.gravatar.com/avatar/469aac167e5b731ad27a12213702e5a0?s=800&r=g">
-		<img id="displaypic" src="http://www.gravatar.com/avatar/469aac167e5b731ad27a12213702e5a0?s=100&r=g" alt="A Gravatar of tag1g09" />
-		</a>
-		{{page.title}}
-	</h1>
-</heading>
-<article>
-{{ content }}
-</article>
-<nav>
-	<h3>Navigate</h3>
-<ul id="navigation">
-	<li>
-		<a href="index.php">
-			Home
-		</a>
-	</li>
-	<li>
-		<a href="index.php?page=cadet">
-			Space Cadet Challenges
-		</a>
-	</li>
-	<li>
-		<a href="index.php?page=photos">
-			Photos
-		</a>
-	</li>
-	<li>
-		<a href="index.php?page=ibmwe">
-			IBM Work Experience
-		</a>
-	</li>
-	<!--<li>
-		<a href="index.php?page=iceskate">
-			Ice Skating
-		</a>
-	</li> -->
-	<li>
-		<a href="http://docs.google.com/View?id=df4md78j_248d2cnpkck">
-			Curriculum Vitae
-		</a>
-		<a href="http://docs.google.com/MiscCommands?command=saveasdoc&exportformat=pdf&docID=0AUkyuqffaYIQZGY0bWQ3OGpfMjQ4ZDJjbnBrY2s">
-				[PDF]
-			</a>
-		</li>
-	</ul>
-	<h3>Tutor Group Members</h3>
-	<ul id="tutor">
-		<li>
-			<a href="/kst">
-				Dr Ken S Thomas
-			</a>
-		</li>
-		<li>
-			<a href="/tag1g09">
-				Thomas Grainger
-			</a>
-		</li>
-		<li>
-			<a href="/sm34g09">
-				Simon May
-			</a>
-		</li>
-		<li>
-			<a href="/ase1g08">
-				Alexandra Elliot
-			</a>
-		</li>
-		<li>
-			<a href="/cs21g09">
-				Christian Severi
-			</a>
-		</li>
-		<li>
-			<a href="/ms28g09">
-				Mark Salvin
-			</a>
-		</li>
-		<li>
-			<a href="/adr1g09">
-				Alexander Rotsides
-			</a>
-		</li>
-		<li>
-			<a href="/rsws1g09">
-				Robert Streeting
-			</a>
-		</li>
-	</ul>
-	<img src="valid-hcd100_2.png" alt="validated by hcd"/>
-</nav>
-<section id="contact">
-	<heading>
-	<h3>Contact Me</h3>
-	By clicking on any of the following images
-	</heading>
-	<ul class="cdetails">
-		<li>
-			<a href="http://mailhide.recaptcha.net/d?k=01K7rdXn6YXK9fZb8NX6A0kQ==&amp;c=Fvru4FKJ-idHuSJ05Ia5Wt_Gz9lxuA2ZZX-kh7z0IDY=" onclick="window.open('http://mailhide.recaptcha.net/d?k=01K7rdXn6YXK9fZb8NX6A0kQ==&amp;c=Fvru4FKJ-idHuSJ05Ia5Wt_Gz9lxuA2ZZX-kh7z0IDY=', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">
-				<img src="images/goog_mail_logo.png" alt="Reveal this e-mail address"
-			</a>
-		</li>
-		<li>
-			<iframe src="http://www.google.com/talk/service/badge/Show?tk=z01q6amlqira8kkj2ori7517kp2pf7km064lmi1dvvir0jptd0fskdnrud9rn7figbd1ejmfp3ca8fbopo0u7b66ia99hc0lmjh95p06r38o1b8ef0acmp6cnkrf3t0uuudbs4ajgvcc71itep7nhpmtdhi1fl77ki6aetrh0&amp;w=159&amp;h=36" frameborder="0" allowtransparency="true" width="159" height="36"></iframe>
-		</li>
+	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
 
-		<li>
-			<a href="http://en-gb.facebook.com/graingert" title="Thomas Grainger" target="_TOP">
-				<img src="images/facebook-logo.png" style="border: 0px;" alt="FaceBook:Thomas Grainger" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="../1.3.0/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+      }
+    </style>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-11236327-4']);
+		_gaq.push(['_setDomainName', '.co.uk']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="/">Thomas Grainger</a>
+
+          <ul class="nav">
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <article class="hero-unit">
+        <header>
+		<h1>{{page.title}}</h1>
+	<header>
+        {{content}}
+
+      </article>
+
+      <!-- Example row of columns -->
+      <div class="row">
+		{% for post in site.pages limit: 3 %}
+        <div class="span5">
+			<a href="{{ post.url }}">
+				<h2>{{ post.title }}</h2>
+			{% if post.thumb %}
+				<figure>
+					<img class="thumbnail" src="{{post.thumb}}" />
+				</figure>
+			{% endif %}
 			</a>
-		</li>
-		<li>
-			<a href="http://www.last.fm/user/graingert" >
-				<img src="images/lastfm_red_small.gif" alt="last.fm"/>
-			</a>
-		</li>
-		<li>
-			<a href="http://twitter.com/graingert" >
-				<img src="images/twitter-logo.png" alt="Twitter"/>
-			</a>
-		</li>
-	</ul>
-	<h3>My Societies Pages</h3>
-	<ul class ="cdetails">
-		<li>
-			<a href="http://atheistsoc.susu.org/">
-				<img width="16" height="16" src="http://pageicons.appspot.com/favicons?url=atheistsoc.susu.org" alt="Atheist Society Favicon"/>	
-				Atheist Society
-			</a>
-		</li>
-		<li>
-			<a href="http://www.sown.org.uk/">
-			<img width="16" height="16" src="http://pageicons.appspot.com/favicons?url=www.sown.org.uk" alt="Atheist Society Favicon"/>
-				SOWN
-			</a>
-		</li>
-	</ul>
-</section>
-<footer>
-&copy; Copyright 2009 - 2012; Thomas 
-Grainger; All rights reserved - SSBBQ0NFUFQgQklUQ09JTlM= 
-19x6YEWJ1MuCR26S5qeex3juAiecEpMexS
-</footer>
-</body>
+			{{ post.excerpt }}
+			<p><a class="btn" href="{{ post.url }}">View details &raquo;</a></p>
+		</div>
+		{% endfor %}
+      </div>
+
+      <footer>
+        <p>&copy; Thomas Grainger 2011  <a href="//github.com/graingert/graingert.github.com">Fork this site on github</a></p>
+	
+      </footer>
+
+    </div> <!-- /container -->
+
+  </body>
 </html>
