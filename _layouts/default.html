@@ -10,7 +10,7 @@ Grainger, tag1g09, ECS undergraduate" />
 href="/foaf.rdf" />	
 <meta name="robots" content="index, follow"/>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -18,7 +18,6 @@ href="/foaf.rdf" />
     <![endif]-->
 
     <!-- Le styles -->
-    <link href="../1.3.0/bootstrap.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -40,7 +39,7 @@ href="/foaf.rdf" />
 
   <body>
 
-    <div class="topbar">
+    <div class="navbar navbar-fixed-top">
       <div class="fill">
         <div class="container">
           <a class="brand" href="/">Thomas Grainger</a>
@@ -68,7 +67,7 @@ href="/foaf.rdf" />
       <!-- Example row of columns -->
       <div class="row">
 		{% for post in site.pages limit: 3 %}
-        <div class="span5">
+        <div class="span4">
 			<a href="{{ post.url }}">
 				<h2>{{ post.title }}</h2>
 			{% if post.thumb %}
