@@ -361,7 +361,7 @@ Not only <font color="#FF0000">ineffective security</font>:
                             <ul>
                                 <li>RC4 becomes vulnerable if two messages are encrypted using the same key-stream</li>
                                 <li>To protect against this, each frame has a random 24-bit Initialization Vector (IV)</li>
-                                <li>The probability of an IV being repeated after 5,000 messages is 50% due to the "birthday paradox"</li>
+                                <li>The probability of an IV being repeated after 4,096 messages becomes likely due to the "birthday paradox"</li>
                                 <li>
                                     <font color="#FF0000">Can then determine plain text and key-stream</font>
                                     <br>
@@ -517,7 +517,7 @@ Not only <font color="#FF0000">ineffective security</font>:
         <li>WPA2 allows the use of the Advanced Encryption Standard (AES) encryption as well as TKIP</li>
         <li>AES is a block cipher, so none of the repeated key attacks apply</li>
         <li>
-            When used with AES WPA2 <font color="#0000FF">might actually be secure</font>
+            When used with AES, WPA2 <font color="#0000FF">might actually be secure</font>
         </li>
     </ul>
 </div>
