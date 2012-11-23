@@ -33,179 +33,319 @@
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+<div class="slides">
+    <section>
+        <h1>wireless security</h1>
+        <p>
+        <a href="http://graingert.co.uk">Thomas Grainger</a>
+        <br>
+    </p>
+</section>
+<section>
+    <h2>Simple security measures</h2>
+<div>
+    <ul>
+        <li>MAC Filtering</li>
+        <li>SSID Hiding</li>
+    </ul>
+</div>
 
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
 
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview. Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
 
-				<section>
-					<h2>rvl.io</h2>
-					<p>
-						If you don't like writing slides in HTML you can use the online editor <a href="http://www.rvl.io" target="_blank">rvl.io</a>.
-					</p>
-				</section>
 
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
 
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
 
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+</section>
+    <section>
+        <section>
+            <h2>MAC Filtering</h2>
+            <div>
+                <ul>
+                    <li>Make a list of MAC addresses that are authorized to connect</li>
+                    <li>If a client is not on that list, issue "Unspecified Failure" rather than&nbsp; "Success"<br>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>MAC Filtering</h2>
+            <img src="http://i.imgur.com/wfe54.png">
+        </section>
+        <section>
+            <h2>MAC Filtering<br>
+</h2>
+<div>
+    <ul>
+        <li>Widely available</li>
+        <li>Client doesn't have to support anything extra</li>
+    </ul>
+<p>
+<br>
+</p>
+<ul>
+        <li>Administration overhead to maintain list</li>
+        <li>
+            <font color="#FF0000">Simple to circumvent!</font>
+        </li>
+    </ul>
+</div>
 
-							<section data-markdown>
-							  ## Markdown support
 
-							  For those of you who like that sort of thing.
-							  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-							</section>
-					</script>
-				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> -
-						<a href="?#/themes">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
+</section>
+        </section>
+        <section>
+            <section>
+                <h2>SSID Hiding</h2>
+            <div>
+                <ul>
+                    <li>Simply avoid advertising the SSID of the network in beacon frames</li>
+                    <li>Prevents the network showing up in network scanners</li>
+                    <li>But...<br>
+                    </li>
+                </ul>
+            </div>
+            </section>
+            <section>            <h2>SSID Hiding</h2>
+<div>
+    <ul>
+        <li>The SSID can be easily discovered</li>
+        <li>Open up <a href="https://www.wireshark.org/">Wireshark</a> and look for:
+            <ul>
+        <li>PROBE requests</li>
+        <li>PROBE responses</li>
+        <li>ASSOCIATION requests</li>
+        <li>REASSOCIATION requests</li>
+    </ul>
+    </li>
+    </ul>
+</div>
+        </section>
+        <section>
+            <h2>SSID HidinG</h2>
+            <img src="http://i.imgur.com/mAHXp.png">
+</section>
+            <section>
+                <h2>SSID Hiding</h2>
+<div>
+Not only <font color="#FF0000">ineffective security</font>:
+    <ul>
+        <li>Can interfere with roaming, because clients use beacons from APs to switch when a stronger signal is available<br>
+                </li>
+        <li>Creates network congestion when clients probe for APs
+        </li>
+    </ul>
+</div>
+</section>
+            </section>
+            <section>
+                <section>
+                    <h2>Encryption</h2>
+<div>
+    <ul>
+        <li>Two methods of authentication</li>
+            <ul>
+                <li>"Open System Authentication"</li>
+                <li>"Shared Key Authentication"</li>
+            </ul>
+        
+        <li>One Method of Encryption
+            <ul>
+                <li>"Wired Equivalence Privacy", WEP</li>
+            </ul>
+        </li>
+    
+</ul>
+</div>
 
-				<section>
-					<section data-state="alert">
-						<h2>Global State</h2>
-						<p>
-							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-							will be added as a class to the document element when the slide is open. This lets you
-							apply broader style changes, like switching the background.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="blackout">
-						<h2>"blackout"</h2>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-state="soothe">
-						<h2>"soothe"</h2>
-						<a href="#" class="image navigate-next">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(-90deg);">
-						</a>
-					</section>
-				</section>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
+
+
+
+
+
+
+</section>
+                    <section>
+                        <h2>Open System Authentication<br>
+                        </h2>
+                        <div>
+                            <ul>
+                                <li>Null authentication</li>
+                                <li>When used with WEP encryption <br>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+                <section>
+                    <section>                        <h2>Wired Equivalent Privacy (WEP)</h2>
+                        <div align="left">
+                            <ul>
+                                <li>Released with the original 802.11 standard in 1999</li>
+                                <li>Responsible for both authentication and encryption</li>
+                                <li>Name comes from the "idea" that it would provide the same security as a wired connection</li>
+                            </ul>
+                        </div>
+                </section>
+                <section>                        <h2>(WEP) Broken By Design</h2>
+                        <div align="left">
+                            <ul>
+                                <li>Uses a 40-bit shared key<br>
+            </li>
+            <li>Only 40-bits to comply with US restrictions on exporting cryptography technology</li>
+                                <li>
+                                    <font color="#FF0000">Brute-force was already practical when the protocol was designed</font>
+                                </li>
+                                <li>Protocol extended by many manufacturers using a 104-bit key<br>
+                                </li>
+                            </ul>
+                        </div>
+        </section>
+        <section>                        <h2>(WEP) Encryption Algorithm</h2>
+                        <div align="left">
+                            <ul>
+                                <li>Uses RC4 encryption algorithm from RSA Data Security</li>
+                                <li>Stream cipher</li>
+                                <li>Simulates a one-time-pad using a <b>pseudo random number generator</b> (PRNG) seeded from a key</li>
+                                <li>Each bit of the plain-text is XORed with a bit of the key-stream<br>
+                                </li>
+                            </ul>
+                        </div>
+    </section>
+    <section>                        <h2>(WEP) Operation</h2>
+                        <div align="left">
+                            <ul>
+                                <li>Because RC4 is a stream cipher a missing bit would cause a misalignment with the key-stream</li>
+                                <li>Frames are expected to be lost so process is restarted each frame<br>
+                                </li>
+                                <li>If the process is restarted each frame the you get the same key-stream each time</li>
+                            </ul>
+                        </div>
+</section>
+<section>                        <h2>WEP (Operation)</h2>
+                        <div align="left">
+                            <ul>
+                                <li>If you restart the process each time you get the same key-stream each time</li>
+                                <li>C1⊕C2=P1⊕P2</li>
+                                <li>
+                                        <img src="http://i.imgur.com/zRpgb.gif" height="100" width="100">⊕<img src="http://i.imgur.com/wc0fx.gif" height="100" width="100">=<img src="http://i.imgur.com/yP2JH.gif" height="100" width="100">⊕<img src="http://i.imgur.com/BDjTS.gif" height="100" width="100">=<img src="http://i.imgur.com/CYtrL.gif" height="100" width="100">
+</li>
+<li>To prevent key-stream reuse, a random 24-bit Initialization Vector (IV) is appended to the shared key<br>
+    </li>
+                            </ul>
+                        </div>
+</section>
+<section>
+    <h2>(WEP) Operation</h2>
+    <div align="left">
+        <ul>
+            <li>Every frame includes an Integrity Check Value (ICV)</li>
+            <li>CRC-32 hash of the plain-text is appended to the plain-text</li>
+            <li>The receiver re-computes the CRC-32 hash of the message and if it does not match the frame is dropped<br>
+            </li>
+        </ul>
+    </div>
+</section>
+<section>
+    <h2>WEP (DIAGRAM)</h2>
+<img src="http://i.imgur.com/IgCT8.png">
+</section>
+</section>
+<section>
+    <h2>(WEP) FLAWS</h2>
+    <div align="left">
+        <ul>
+            <li>ICV</li>
+            <li>Key-stream discovery</li>
+            <li>Frame Injection</li>
+            <li>Tews, Weinmann, and Psyhkin Shared Key Recovery</li>
+            <li>The Caffe Latte Attack<br>
+            </li>
+        </ul>
+    </div>
+</section>
+<section>
+    <section>
+        <h2>(WEP) Fixes</h2>
+<div>
+    <ul>
+        <li>WEP2
+            
+        </li>
+
+
+        <li>WEPplus</li>
+        <li>Dynamic WEP</li>
+    </ul>
+</div>
+
+</section>
+        <section>
+            <h2>WEP2</h2>
+            <div>
+                <ul>
+                    <li>Extends shared key and IV to 128 bits</li>
+                    <li>Still allows IV re-use</li>
+                    <li>Still uses CRC-32 for ICV</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>WEPPlus</h2>
+            <div>
+                <ul>
+                    <li>Proprietary enhancement to WEP by <a href="https://en.wikipedia.org/wiki/Agere_Systems">Agere Systems</a>
+                </li>
+                <li>Avoid "Weak IVs" in WEP</li>
+                <li>Only effective when used at "both ends"</li>
+                <li>Doesn't prevent replay attacks</li>
+                <li>Interestingly Linux Kernel &gt; 2.6.20 includes protection against weak IVs<br>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>Dynamic WEP</h2>
+        <div>
+            <ul>
+                <li>Give each user a dynamically generated key</li>
+                <li>Never standardized</li>
+                <li>Idea carried over into 802.11i<br>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <h2>None of the "Fixes" are any good</h2>
+        <p align="left">Ultimately none of the WEP fixes were ever seriously used or effective</p>
+        <p align="left">
+            <br>
+        </p>
+        <p align="left">The only way to fix WEP implementations is to replace them<br>
+        </p>
+    </section>
+</section>
+<section>
+    <h2>802.11i</h2>
+    <div>
+        <ul>
+            <li>Draft published in 2003 (2 years after WEP first cracked!)</li>
+            <li>Ratified on 24th June 2004 as 802.11i</li>
+            <li>On March 8th 802.11i and 802.11(a,b,d,e,g...j) combined into "IEEE 802.11-2007"</li>
+            <li>Wi-Fi Protected Access (WPA) and Wi-Fi Protected Access II (WPA2)<br>
+            </li>
+        </ul>
+    </div>
+</section>
+</div>
+
 	console.log( '"customevent" has fired' );
 } );
 					</code></pre>
