@@ -74,124 +74,8 @@
 </section>
     </section>
     <section>
-        <h2>Authentication<br>
-    </h2>
-<div align="left">
-    <ul>
-        <li>Focusing on Open System Authentication</li>
-    <li>Some basic systems build on top to provide authentication without keys:
-        <ul>
-            <li>MAC Filtering</li>
-            <li>SSID Hiding</li>
-        </ul>
-        
-    </li>
-
-    </ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-</section>
         <section>
-            <section>
-                <h2>MAC Filtering</h2>
-                <div>
-                    <ul>
-                        <li>Make a list of MAC addresses that are authorized to connect</li>
-                        <li>If a client is not on that list, issue "Unspecified Failure" rather than&nbsp; "Success"<br>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section>
-                <h2>MAC Filtering</h2>
-                <img src="http://i.imgur.com/wfe54.png">
-            </section>
-            <section>
-                <h2>MAC Filtering<br>
-</h2>
-<div align="left">
-    <ul>
-        <li>Widely available</li>
-        <li>Client doesn't have to support anything extra</li>
-    </ul>
-<p>
-<br>
-</p>
-<ul>
-        <li>Administration overhead to maintain list</li>
-        <li>
-            <font color="#FF0000">Simple to circumvent!</font>
-        </li>
-    </ul>
-</div>
-
-
-
-
-
-</section>
-            </section>
-            <section>
-                <section>
-                    <h2>SSID Hiding</h2>
-            <div>
-                <ul>
-                    <li>Simply avoid advertising the SSID of the network in beacon frames</li>
-                    <li>Prevents the network showing up in network scanners</li>
-                    <li>But...<br>
-                    </li>
-                </ul>
-            </div>
-                </section>
-                <section>            <h2>SSID Hiding</h2>
-<div align="left">
-    <ul>
-        <li>The SSID can be easily discovered</li>
-        <li>Open up <a href="https://www.wireshark.org/">Wireshark</a> and look for:
-            <ul>
-        <li>PROBE requests</li>
-        <li>PROBE responses</li>
-        <li>ASSOCIATION requests</li>
-        <li>REASSOCIATION requests</li>
-    </ul>
-    </li>
-    </ul>
-</div>
-</section>
-                <section>
-                    <h2>SSID HidinG</h2>
-                    <img src="http://i.imgur.com/mAHXp.png">
-</section>
-                    <section>
-                        <h2>SSID Hiding</h2>
-<div align="left">
-Not only <font color="#FF0000">ineffective security</font>:
-    <ul>
-        <li>Can interfere with roaming, because clients use beacons from APs to switch when a stronger signal is available<br>
-                </li>
-        <li>Creates network congestion when clients probe for APs
-        </li>
-    </ul>
-</div>
-
-
-</section>
-                    </section>
-                    <section>
-                        <section>
-                            <h2>Original 802.11
+            <h2>Original 802.11
 </h2>
 <div align="left">
     <ul>
@@ -220,28 +104,149 @@ Not only <font color="#FF0000">ineffective security</font>:
 
 
 
+
 </section>
-                            <section>
-                                <h2>Open System Authentication</h2>
+            <section>
+                <h2>Open System Authentication</h2>
 <div>
     <ul>
         <li>Null authentication</li>
         <li>Can be used with WEP encryption providing implicit authentication</li>
+                <li>Clients requests to join, either "Successful" or otherwise<br>
+                </li>
+    </ul>
+</div>
+
+</section>
+                <section>
+                    <h2>Shared Key Authentication</h2>
+<div>
+    <ul>
+        <li>Uses shared key to authenticate clients with a four way handshake<br>
+        </li>
+        <li>Doesn't require encryption</li>
+        <li>Shared Key Authentication + Encryption <font color="#FF0000">is less secure than</font> Open System Authentication + Encryption<br>
+        </li>
+    </ul>
+</div>
+
+</section>
+                    <section>
+                        <h2>Authentication<br>
+    </h2>
+<div align="left">
+    <ul>
+        <li>Focusing on Open System Authentication</li>
+    <li>Some basic systems build on top to provide authentication without keys:
+        <ul>
+            <li>MAC Filtering</li>
+            <li>SSID Hiding</li>
+        </ul>
+        
+    </li>
+
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+                    </section>
+                    <section>
+                        <section>
+                            <h2>MAC Filtering</h2>
+                            <div>
+                                <ul>
+                                    <li>Make a list of MAC addresses that are authorized to connect</li>
+                                    <li>If a client is not on that list, issue "Unspecified Failure" rather than&nbsp; "Success"<br>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section>
+                            <h2>MAC Filtering</h2>
+                            <img src="http://i.imgur.com/wfe54.png">
+                        </section>
+                        <section>
+                            <h2>MAC Filtering<br>
+</h2>
+<div align="left">
+    <ul>
+        <li>Widely available</li>
+        <li>Client doesn't have to support anything extra</li>
+    </ul>
+<p>
+<br>
+</p>
+<ul>
+        <li>Administration overhead to maintain list</li>
+        <li>
+            <font color="#FF0000">Simple to circumvent!</font>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+</section>
+                        </section>
+                        <section>
+                            <section>
+                                <h2>SSID Hiding</h2>
+            <div>
+                <ul>
+                    <li>Simply avoid advertising the SSID of the network in beacon frames</li>
+                    <li>Prevents the network showing up in network scanners</li>
+                    <li>But...<br>
+                    </li>
+                </ul>
+            </div>
+                            </section>
+                            <section>            <h2>SSID Hiding</h2>
+<div align="left">
+    <ul>
+        <li>The SSID can be easily discovered</li>
+        <li>Open up <a href="https://www.wireshark.org/">Wireshark</a> and look for:
+            <ul>
+        <li>PROBE requests</li>
+        <li>PROBE responses</li>
+        <li>ASSOCIATION requests</li>
+        <li>REASSOCIATION requests</li>
+    </ul>
+    </li>
     </ul>
 </div>
 </section>
+                            <section>
+                                <h2>SSID HidinG</h2>
+                                <img src="http://i.imgur.com/mAHXp.png">
+</section>
                                 <section>
-                                    <h2>Shared Key Authentication</h2>
-                                    <div>
-                                        <ul>
-                                            <li>Uses shared key to authenticate clients with a four way handshake<br>
-                                            </li>
-                                            <li>Doesn't require encryption<br>
-                                            </li>
-                                            <li>Shared Key Authentication + Encryption <font color="#FF0000">is less secure than</font> Open System Authentication + Encryption<br>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <h2>SSID Hiding</h2>
+<div align="left">
+Not only <font color="#FF0000">ineffective security</font>:
+    <ul>
+        <li>Can interfere with roaming, because clients use beacons from APs to switch when a stronger signal is available<br>
+                </li>
+        <li>Creates network congestion when clients probe for APs
+        </li>
+    </ul>
+</div>
+
+
 </section>
                                 </section>
                                 <section>
@@ -552,6 +557,7 @@ Not only <font color="#FF0000">ineffective security</font>:
 </div>
 </section>
                         </div>
+
 
 		<!--END-->
 		</div>
