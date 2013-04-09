@@ -41,6 +41,7 @@
 		<owl:sameAs rdf:resource="http://id.ecs.soton.ac.uk/person/23839"/>
 		<foaf:interest rdf:resource="http://www.w3.org/RDF/"/>
 		<foaf:interest rdf:resource="#xss" />
+                <foaf:knows rdf:resource="http://tomblount.co.uk/resources/foaf.rdf#me"/>
 	</foaf:Person>
 	<foaf:Document rdf:about="#xss">
 	    <rdfs:label rdf:datatype="&rdf;HTML">
