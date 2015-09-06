@@ -1,4 +1,0 @@
-<?php
-include_once('./inc/common_functions.inc.php');
-
-$student = Student::getByEmail($_POST['email'])
