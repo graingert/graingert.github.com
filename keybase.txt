@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/graingert
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://graingert.co.uk
+  * I am graingert (https://keybase.io/graingert) on keybase.
+  * I have a public key ASCfN6bY6hY-hDOEWBRzS1CgnhV40QT9ngpV9GuayqZ7JQo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01209f37a6d8ea163e8433845814734b50a09e1578d104fd9e0a55f46b9acaa67b250a",
+            "host": "keybase.io",
+            "kid": "01209f37a6d8ea163e8433845814734b50a09e1578d104fd9e0a55f46b9acaa67b250a",
+            "uid": "1bf4a91530238a5db435373799a18219",
+            "username": "graingert"
+        },
+        "service": {
+            "hostname": "graingert.co.uk",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.18"
+    },
+    "ctime": 1487070543,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1487070502,
+        "hash": "87c57069b5e1ac2c925ea45b4d4a66c44b5b6de1456d3aea76d9086d088fe7d6660cfa2deb5cf6b902ae14089aba321002e954f73eaadcdb2ea23a7a4c4e2bd2",
+        "seqno": 888381
+    },
+    "prev": "71f22c2f73ba457aa3fea633b12391151abfa33367b51e53653dfcad8a63eb4f",
+    "seqno": 10,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgnzem2OoWPoQzhFgUc0tQoJ4VeNEE/Z4KVfRrmsqmeyUKp3BheWxvYWTFAvl7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwOWYzN2E2ZDhlYTE2M2U4NDMzODQ1ODE0NzM0YjUwYTA5ZTE1NzhkMTA0ZmQ5ZTBhNTVmNDZiOWFjYWE2N2IyNTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOWYzN2E2ZDhlYTE2M2U4NDMzODQ1ODE0NzM0YjUwYTA5ZTE1NzhkMTA0ZmQ5ZTBhNTVmNDZiOWFjYWE2N2IyNTBhIiwidWlkIjoiMWJmNGE5MTUzMDIzOGE1ZGI0MzUzNzM3OTlhMTgyMTkiLCJ1c2VybmFtZSI6ImdyYWluZ2VydCJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiZ3JhaW5nZXJ0LmNvLnVrIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTgifSwiY3RpbWUiOjE0ODcwNzA1NDMsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ4NzA3MDUwMiwiaGFzaCI6Ijg3YzU3MDY5YjVlMWFjMmM5MjVlYTQ1YjRkNGE2NmM0NGI1YjZkZTE0NTZkM2FlYTc2ZDkwODZkMDg4ZmU3ZDY2NjBjZmEyZGViNWNmNmI5MDJhZTE0MDg5YWJhMzIxMDAyZTk1NGY3M2VhYWRjZGIyZWEyM2E3YTRjNGUyYmQyIiwic2Vxbm8iOjg4ODM4MX0sInByZXYiOiI3MWYyMmMyZjczYmE0NTdhYTNmZWE2MzNiMTIzOTExNTFhYmZhMzMzNjdiNTFlNTM2NTNkZmNhZDhhNjNlYjRmIiwic2Vxbm8iOjEwLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQLNOmiGmr9YZiNsu1BzqiFl3DOLgH4GBa6HoFKqPV8N5B87SiQ/q8sTYDXo+tqJoUr/5xGEzUSvnraboMP6LFwmoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCCOVtA+IwxCgbu3SG3vZk5300SX4xGKHbZhdddk/fhthqN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/graingert
+
+==================================================================
